@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="Menu">Food</string>
+    <string name="Eat1">Soup</string>
+    <string name="Eat2">Main dish</string>
+    <string name="btnmore">More ></string>
+    <string name="btnadd">Add</string>
+    <string name="order">Order</string>
+    <string name="category">Category:</string>
+    <string name="nameDish">Name:</string>
+    <string name="price">Price:</string>
+    <string name="weight">Weight:</string>
+    <string name="amount">Amount:</string>
+    <string name="btnForOrder">Accept order</string>
+</resources>
