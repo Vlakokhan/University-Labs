@@ -3,9 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidProject/app/src/main/res/drawable/oval_button.xml" value="0.1" />
-        <entry key="..\:/AndroidProject/app/src/main/res/layout/activity_dish_selection.xml" value="0.1" />
-        <entry key="..\:/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Lab4/app/src/main/res/drawable/oval_button.xml" value="0.1" />
+        <entry key="..\:/Lab4/app/src/main/res/layout/activity_main.xml" value="0.22327898550724637" />
       </map>
     </option>
   </component>
