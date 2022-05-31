@@ -1,6 +1,8 @@
 package com.example.lab4.data.api
 
+import com.example.lab4.data.IDataSource
 import com.example.lab4.data.model.ApiInfo
+import com.example.lab4.di.DiHelper
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
@@ -9,7 +11,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class OrderApiService {
+class OrderApiService: IDataSource {
 
     companion object {
         const val MASTER_KEY: String = "\$2b\$10\$HmcvDAa9iO7WHJkRgm2gx..6oJWeZJ46r4/iM8NjNcKB44MH2NiYG"
@@ -19,22 +21,11 @@ class OrderApiService {
     var api: OrderApi
 
     init {
-        val logging = HttpLoggingInterceptor()
-        logging.setLevel(HttpLoggingInterceptor.Level.BODY)
-
-        val client: OkHttpClient = OkHttpClient.Builder()
-            .addInterceptor(logging)
-            .build()
-
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.jsonbin.io/v3/")
-            .client(client)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
+        val retrofit = DiHelper.getRetrofitHelper().retrofit
         api = retrofit.create(OrderApi::class.java)
     }
 
-    fun getInfo(callback: InfoCallback) {
+    override fun getInfo(callback:IDataSource.InfoCallback) {
         api.getInfo(
             MASTER_KEY,
             ACCESS_KEY
@@ -54,8 +45,7 @@ class OrderApiService {
             }
         })
     }
-    interface InfoCallback {
-        fun onSuccess(info: ApiInfo)
-        fun onFailure()
-    }
+
+
+
 }
