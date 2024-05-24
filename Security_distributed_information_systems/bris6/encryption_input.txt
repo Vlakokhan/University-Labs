@@ -1,0 +1,13 @@
+In modern society, it is information that becomes the most important strategic resource, the main productive force that ensures its further development. 
+That is why, like any other traditionally existing resources, information also needs special protection.
+ Along with the term "information protection", the term "information security" is also widely used. 
+ If information protection characterizes the process of creating conditions that ensure the necessary security of information, then information security reflects the achieved state of such security.
+
+The problem of information security has gained special significance in modern conditions of widespread use of automated information systems based on the use of computer and telecommunication tools.
+ When ensuring information security, threats caused by intentional (malicious) actions of people have become quite real. 
+ The first reports of unauthorized access to information were mainly related to hackers, or "electronic robbers". 
+ In the last decade, the violation of information protection has progressed with the use of software tools and through the global Internet. 
+ Infection of computer systems with so-called viruses has also become a fairly common threat to information security.
+
+Thus, in connection with the growing role of information resources in the life of modern society, as well as due to the reality of numerous threats from the point of view of their security, the problem of information security requires constant and greater attention. 
+The systemic nature of the impact on information security of a large set of different circumstances, which also have a different physical nature, pursue different goals and cause different consequences, lead to the need for a comprehensive approach to solving this problem.
